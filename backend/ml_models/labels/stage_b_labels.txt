@@ -1,0 +1,7 @@
+leaf_rot
+rust
+leaf_blight
+root_rot
+tip_burn
+crown_rot
+basal_stem_rot

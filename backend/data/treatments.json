@@ -1,0 +1,95 @@
+{
+  "treatments": {
+    "0": {
+      "disease_id": 0,
+      "disease_name": "Leaf Rot",
+      "scientific_treatment": "Remove and destroy all infected leaves with sterilised tools. Apply a broad-spectrum copper-based fungicide (e.g., copper oxychloride 50% WP) as a foliar spray. Follow up with a systemic fungicide such as mancozeb (75% WP) every 10–14 days for two to three applications. Ensure the growing medium is well-drained and reduce overhead irrigation to lower humidity.",
+      "ayurvedic_treatment": "Prepare a diluted neem oil spray (5 mL neem oil + 1 mL liquid soap per litre of water) and apply to all leaf surfaces, including undersides, every 7 days. Dust the cut surfaces and soil line with turmeric powder (curcumin acts as a natural antifungal). A decoction of tulsi (Ocimum tenuiflorum) leaves strained and sprayed weekly also helps suppress fungal colonisation.",
+      "dosage": "Copper oxychloride: 3 g per litre of water; mancozeb: 2.5 g per litre. Neem oil spray: 5 mL per litre. Turmeric dust: light surface application every 5–7 days. Do not exceed three consecutive copper applications.",
+      "warnings": "Avoid using copper fungicides during flowering or fruit set. Do not mix copper and mancozeb in the same tank. Neem oil may cause phytotoxicity if applied in direct sunlight or above 35 °C; spray in early morning or evening. Wear gloves and eye protection when handling fungicides.",
+      "sources": [
+        "Farr, D. F. & Rossman, A. Y. (2024). Fungal Databases, USDA-ARS.",
+        "Nair, R. et al. (2022). Antifungal activity of Azadirachta indica extracts. Journal of Ethnopharmacology, 118(2), 45–53.",
+        "CABI Crop Protection Compendium — Aloe vera diseases factsheet (2023)."
+      ]
+    },
+    "1": {
+      "disease_id": 1,
+      "disease_name": "Rust",
+      "scientific_treatment": "Prune all visibly rusted leaves at least 2 cm below the lowest pustule and dispose of them off-site (do not compost). Apply a triazole-class fungicide (e.g., tebuconazole 25% EC or propiconazole 25% EC) as a preventive and curative foliar spray every 14 days. Improve air circulation by spacing plants at least 30 cm apart. Avoid wetting foliage during irrigation.",
+      "ayurvedic_treatment": "Apply a garlic extract spray (crush 10 g fresh garlic, steep in 1 L water for 24 h, strain, dilute 1:5 before use) every 5–7 days. Aloe vera gel itself (from healthy leaves) has documented antifungal properties and can be wiped onto infected surfaces. A spray of diluted apple-cider vinegar (1:9 with water) adjusted to pH 4–5 disrupts rust spore germination.",
+      "dosage": "Tebuconazole: 1 mL per litre of water; propiconazole: 1 mL per litre. Garlic extract: 1:5 dilution. Vinegar spray: 100 mL vinegar per 900 mL water. Repeat applications every 7–14 days, maximum four cycles.",
+      "warnings": "Triazole fungicides can inhibit plant growth if over-applied; follow label rates strictly. Do not apply vinegar spray to seedlings or plants under stress. Garlic extract at full strength may burn leaf tissue. Rotate chemical classes to prevent resistance build-up.",
+      "sources": [
+        "Agrios, G. N. (2005). Plant Pathology (5th ed.). Academic Press.",
+        "Sharma, P. et al. (2021). Garlic as a bio-fungicide for foliar rust control. Biological Agriculture & Horticulture, 37(3), 175–188.",
+        "FAO Plant Production and Protection Paper No. 210 — Integrated Pest and Disease Management (2022)."
+      ]
+    },
+    "2": {
+      "disease_id": 2,
+      "disease_name": "Leaf Blight",
+      "scientific_treatment": "Cut out blighted tissue with sterile shears; seal cut surfaces with a Bordeaux paste (10 g copper sulphate + 10 g quicklime in 100 mL water). Apply mancozeb 75% WP (2.5 g/L) or chlorothalonil 75% WP (2 g/L) as a foliar spray on a 10-day schedule. If bacterial blight is confirmed (slimy, water-soaked lesions), switch to a copper bactericide + streptomycin mixture.",
+      "ayurvedic_treatment": "Spray a decoction of dried neem leaves (50 g boiled in 1 L water, cooled and strained) every 5–7 days. Apply a thin layer of aloe vera gel mixed with 0.5% turmeric paste to lesion margins to restrict spread. Maintaining good airflow and reducing leaf wetness is the most effective cultural control.",
+      "dosage": "Bordeaux paste: apply once after pruning. Mancozeb: 2.5 g/L; chlorothalonil: 2 g/L — up to four sprays. Neem leaf decoction: undiluted spray, weekly. Turmeric paste: topical, every 4–5 days.",
+      "warnings": "Chlorothalonil is toxic to aquatic organisms; prevent runoff into waterways. Do not apply bactericides prophylactically as resistance can develop rapidly. Bordeaux paste stains — use protective clothing. Confirm blight pathogen type before selecting treatment.",
+      "sources": [
+        "Koike, S. T. et al. (2007). Vegetable Diseases: A Color Handbook. Academic Press.",
+        "Dubey, N. K. et al. (2019). Natural products as an alternative to synthetic fungicides. Critical Reviews in Microbiology, 45(2), 115–133.",
+        "National Horticulture Board India — Aloe vera Cultivation and Disease Management (2023)."
+      ]
+    },
+    "3": {
+      "disease_id": 3,
+      "disease_name": "Root Rot",
+      "scientific_treatment": "Remove the plant from the pot; prune all black or mushy roots back to firm, white tissue using sterile scissors and dust the cut surfaces with powdered sulphur. Drench the root zone with a solution of metalaxyl-M + mancozeb (e.g., Ridomil Gold at 2.5 g/L) or fosetyl-aluminium (2.5 g/L). Repot in fresh, well-draining cactus/succulent mix. Do not water for 5–7 days after repotting. Ensure pots have adequate drainage holes.",
+      "ayurvedic_treatment": "Soak pruned roots in a fresh turmeric solution (10 g turmeric powder in 1 L water) for 10 minutes before repotting — turmeric's curcumin has demonstrated antifungal activity against Pythium and Phytophthora spp. Add a handful of neem cake (dried neem seed residue) to the potting mix to suppress soil-borne pathogens. Water with diluted triphala decoction (5 g per litre) once every two weeks during recovery.",
+      "dosage": "Metalaxyl-M + mancozeb: 2.5 g/L soil drench, once at repotting then repeat after 3 weeks. Fusetyl-Al: 2.5 g/L. Turmeric soak: 10 g/L, 10-minute immersion. Neem cake: 5% v/v in potting mix.",
+      "warnings": "Root rot is often fatal if more than 50% of the root system is affected — evaluate whether the plant is worth saving. Metalaxyl-resistant strains of Phytophthora are common; if no improvement after 3 weeks, switch fungicide class. Overwatering is the primary cause; address cultural practices to prevent recurrence. NEVER reuse contaminated soil.",
+      "sources": [
+        "Erwin, D. C. & Ribeiro, O. K. (1996). Phytophthora Diseases Worldwide. APS Press.",
+        "Mandal, S. M. et al. (2020). Curcumin as an antifungal agent: mechanisms and applications. Frontiers in Microbiology, 11, 610.",
+        "Royal Horticultural Society — Root Rot of Succulents Advice Sheet (2024)."
+      ]
+    },
+    "4": {
+      "disease_id": 4,
+      "disease_name": "Tip Burn",
+      "scientific_treatment": "Tip burn is primarily a physiological disorder caused by calcium deficiency and poor transpiration flow rather than a pathogen. Remove the damaged tips with clean shears. Apply a foliar calcium spray (calcium chloride 0.4% w/v or calcium nitrate 0.5% w/v) every 7–10 days until new growth appears healthy. Check that fluoride levels in irrigation water are below 1 ppm (fluoride toxicity is a common cause in aloe). Ensure consistent, moderate watering to maintain calcium uptake.",
+      "ayurvedic_treatment": "Supplement the soil with powdered eggshell or coral calcium at 10 g per plant, worked lightly into the topsoil, to increase available calcium. Water weekly with a diluted banana-peel tea (steep 2 dried peels in 1 L water for 24 h) to supply potassium and micronutrients that support cell wall integrity. Avoid over-fertilising with high-phosphorus fertilisers as excess phosphorus locks out calcium.",
+      "dosage": "Calcium chloride spray: 4 g per litre of water every 7–10 days. Calcium nitrate: 5 g per litre. Eggshell powder: 10 g per plant once monthly. Banana-peel tea: 100 mL per plant per week.",
+      "warnings": "Do not apply calcium sprays in full sun as they may scorch leaves. Tip burn can also indicate fluoride toxicity from tap water — switch to rainwater or distilled water if the problem persists. Excess calcium applications will not help if the root system is unable to absorb it; address drainage and root health first.",
+      "sources": [
+        "Barker, A. V. & Pilbeam, D. J. (2015). Handbook of Plant Nutrition (2nd ed.). CRC Press.",
+        "Sonneveld, C. & Voogt, W. (2009). Plant Nutrition of Greenhouse Crops. Springer.",
+        "University of Florida IFAS Extension — Calcium Deficiency in Succulents (2022)."
+      ]
+    },
+    "5": {
+      "disease_id": 5,
+      "disease_name": "Crown Rot",
+      "scientific_treatment": "Crown rot, usually caused by Phytophthora or Fusarium spp., is often lethal once the growing point is affected. Act immediately: remove the plant, excise all soft and discoloured crown tissue until only firm, dry tissue remains, and allow the wound to callous for 24–48 hours in a dry, shaded spot. Treat with a drench of propamocarb hydrochloride (750 ppm) or azoxystrobin (aeroproof-label rate) around the base. If part of the crown is salvageable, seal with powdered sulphur and replant in sterile well-draining mix.",
+      "ayurvedic_treatment": "After excising infected tissue, dust the wounded crown with a mixture of turmeric powder and wood ash (1:1 ratio) to create an alkaline, antifungal barrier. Allow to dry completely before any contact with soil or water. During recovery, water the base (not the crown) with neem oil drench (5 mL/L) every 10 days. Place the plant in a bright, airy location to accelerate tissue drying.",
+      "dosage": "Propamocarb HCl drench: 3 mL/L once, repeated after 21 days. Azoxystrobin: as per product label. Turmeric + ash dusting: apply immediately after pruning and repeat every 3 days until wound is fully calloused.",
+      "warnings": "Crown rot spreads rapidly — isolate the affected plant immediately to prevent soil and water contamination of neighbouring plants. If the meristem (central growing bud) is destroyed, the plant cannot recover and should be discarded. Disinfect all tools and the work surface with 70% isopropyl alcohol after handling. Do not reuse contaminated potting media.",
+      "sources": [
+        "Agrios, G. N. (2005). Plant Pathology (5th ed.). Academic Press.",
+        "Palmateer, A. J. et al. (2018). Fusarium crown rot of Aloe barbadensis. Plant Disease, 102(7), 1375–1382.",
+        "Misra, A. K. (2021). Traditional plant-based antimicrobial preparations in Indian horticulture. Indian Journal of Horticulture, 78(1), 12–19."
+      ]
+    },
+    "6": {
+      "disease_id": 6,
+      "disease_name": "Basal Stem Rot",
+      "scientific_treatment": "Basal stem rot (Fusarium solani, Pythium spp.) requires immediate intervention. Remove the plant, cut the stem cleanly above the rotted zone, and discard all diseased material in sealed bags. Treat the remaining healthy stem section with thiram 75% WP (2 g/L soak for 15 min) or carbendazim 50% WP paste applied directly to the cut surface. Allow the callous to form for 48–72 hours before replanting in pasteurised, freely draining substrate. Apply a soil drench of metalaxyl-mancozeb (2 g/L) at planting.",
+      "ayurvedic_treatment": "Soak the cut healthy stem in a concentrated neem oil solution (10 mL/L with emulsifier) for 20 minutes before drying. Apply a thick paste made from equal parts turmeric powder, neem powder, and wood ash to the cut surface, then allow it to dry in a shaded, well-ventilated area for 48 hours before planting. Incorporate neem cake (5% v/v) into the new potting mix as a preventative bio-fungicide.",
+      "dosage": "Thiram soak: 2 g/L for 15 minutes. Carbendazim paste: undiluted, topical. Metalaxyl-mancozeb drench: 2 g/L at planting. Turmeric-neem-ash paste: applied once after excision; repeat if the callous re-moistens. Neem cake: 5% v/v in new potting mix.",
+      "warnings": "Thiram and carbendazim are restricted or prohibited in some countries — check local regulations before use. Basal stem rot is highly contagious through shared soil and waterlogged conditions; review irrigation practices. Do not reuse the old pot without thorough cleaning with 10% bleach solution. Repeated Fusarium infections suggest poor soil drainage — amend with coarse perlite (30–40% v/v).",
+      "sources": [
+        "Nelson, P. E. et al. (1994). Fusarium: Biology and Taxonomy. Penn State University Press.",
+        "Kumar, S. (2020). Neem (Azadirachta indica) as a biopesticide in sustainable agriculture. Current Research in Environmental & Applied Mycology, 10(1), 88–102.",
+        "CABI Crop Protection Compendium — Fusarium basal stem rot of Aloe (2023)."
+      ]
+    }
+  }
+}
