@@ -9,7 +9,27 @@
  */
 
 import axios, { AxiosInstance } from 'axios';
+import { Platform } from 'react-native';
 import { Endpoints } from '@/constants';
+
+const FETCH_TIMEOUT_MS = 30_000;
+
+/**
+ * Ensure local image URIs have the correct scheme for React Native's fetch.
+ * expo-image-picker on Android sometimes returns a path without "file://".
+ * "content://" URIs (media store) must be left untouched.
+ */
+function normalizeImageUri(uri: string): string {
+  if (
+    Platform.OS === 'android' &&
+    !uri.startsWith('file://') &&
+    !uri.startsWith('content://') &&
+    !uri.startsWith('http')
+  ) {
+    return `file://${uri}`;
+  }
+  return uri;
+}
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -136,11 +156,17 @@ export async function predictDisease(imageUris: string[]): Promise<PredictRespon
   const form = new FormData();
 
   imageUris.forEach((uri, index) => {
+    const normalizedUri = normalizeImageUri(uri);
     const fieldName = `image${index + 1}`;
-    const filename = uri.split('/').pop() ?? `${fieldName}.jpg`;
+    const filename = normalizedUri.split('/').pop() ?? `${fieldName}.jpg`;
     const ext = filename.split('.').pop()?.toLowerCase() ?? 'jpg';
+
+    if (__DEV__) {
+      console.log(`[API] appending ${fieldName}:`, normalizedUri);
+    }
+
     form.append(fieldName, {
-      uri,
+      uri: normalizedUri,
       name: filename,
       type: ext === 'png' ? 'image/png' : 'image/jpeg',
     } as unknown as Blob);
@@ -152,20 +178,42 @@ export async function predictDisease(imageUris: string[]): Promise<PredictRespon
     console.log('[API] → POST (fetch)', url);
   }
 
+  // AbortController gives us a real timeout; React Native fetch has no built-in timeout.
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+
   let res: Response;
   try {
     res = await fetch(url, {
       method: 'POST',
       body: form,
+      signal: controller.signal,
       // Do NOT set Content-Type — fetch sets it automatically with the correct boundary
     });
   } catch (networkErr: unknown) {
+    const isTimeout =
+      networkErr instanceof Error && networkErr.name === 'AbortError';
+    const errName = networkErr instanceof Error ? networkErr.name : typeof networkErr;
     const msg = networkErr instanceof Error ? networkErr.message : String(networkErr);
-    if (__DEV__) console.error('[API] fetch network error:', msg);
+
+    if (__DEV__) {
+      console.error('[API] ─── fetch failed ────────────────────────');
+      console.error('[API] type    :', errName);
+      console.error('[API] message :', msg);
+      console.error('[API] url     :', url);
+      console.error('[API] timeout :', isTimeout);
+      console.error('[API] platform:', Platform.OS);
+      console.error('[API] ─────────────────────────────────────────');
+    }
+
     throw new Error(
-      `Cannot reach the AI server at ${Endpoints.AI_BASE_URL}. ` +
-      'Make sure the FastAPI backend is running and the device is on the same Wi-Fi network.',
+      isTimeout
+        ? `Request timed out after ${FETCH_TIMEOUT_MS / 1000}s. Is the FastAPI server running at ${Endpoints.AI_BASE_URL}?`
+        : `Cannot reach the AI server at ${Endpoints.AI_BASE_URL}. ` +
+          'Make sure the FastAPI backend is running and the device is on the same Wi-Fi network.',
     );
+  } finally {
+    clearTimeout(timeoutId);
   }
 
   if (__DEV__) {
